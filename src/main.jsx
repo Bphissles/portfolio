@@ -10,6 +10,7 @@ const WorkPage = lazy(() => import('./pages/WorkPage.jsx'))
 const EducationPage = lazy(() => import('./pages/EducationPage.jsx'))
 const AboutPage = lazy(() => import('./pages/AboutPage.jsx'))
 const RecommendationsPage = lazy(() => import('./pages/RecommendationsPage.jsx'))
+const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage.jsx'))
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Suspense><HomePage /></Suspense> },
       { path: 'projects', element: <Suspense><ProjectsPage /></Suspense> },
+      { path: 'projects/:slug', element: <Suspense><ProjectDetailPage /></Suspense> },
       { path: 'work', element: <Suspense><WorkPage /></Suspense> },
       { path: 'education', element: <Suspense><EducationPage /></Suspense> },
       { path: 'about', element: <Suspense><AboutPage /></Suspense> },
