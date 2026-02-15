@@ -20,13 +20,17 @@ function HomePage() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 md:mt-8">
           <Link to="/projects" className="btn btn-teal">View Projects</Link>
-          <Link to="/work" className="btn btn-coral">Work History</Link>
+          <Link to="/about" className="btn btn-coral">About Me</Link>
+          <Link to="/contact" className="btn btn-outline">Contact</Link>
           <Link to="/recommendations" className="btn btn-outline">Recommendations</Link>
         </div>
       </section>
 
       <section className="py-8 md:py-16 border-t border-black/10">
-        <h2 className="text-2xl md:text-3xl font-bold italic text-black mb-6 md:mb-8">Skills & Expertise</h2>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6 md:mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold italic text-black">Skills & Expertise</h2>
+          <Link to="/work" className="btn btn-coral text-sm self-start sm:self-auto">Work History</Link>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill) => (
             <BorderCard key={skill.category} color="teal">

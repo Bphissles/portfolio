@@ -10,6 +10,7 @@ function Navigation() {
     { label: 'Education', to: '/education' },
     { label: 'About', to: '/about' },
     { label: 'Letters', to: '/recommendations' },
+    { label: 'Contact', to: '/contact' },
   ]
 
   return (

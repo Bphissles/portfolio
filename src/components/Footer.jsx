@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom'
+
 function Footer() {
   const links = [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/benjaminhislop/', icon: 'linkedin' },
     { label: 'GitHub', href: 'https://github.com/Bphissles', icon: 'github' },
+    { label: 'Contact', href: '/contact', icon: 'contact', internal: true },
     { label: 'Resume', href: '/resume.pdf', icon: 'resume' },
   ]
 
@@ -14,14 +17,23 @@ function Footer() {
         <ul className="flex gap-6">
           {links.map((link) => (
             <li key={link.label}>
-              <a
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-ghost text-cream border-0! px-0! py-0! hover:text-teal!"
-              >
-                {link.label}
-              </a>
+              {link.internal ? (
+                <Link
+                  to={link.href}
+                  className="btn btn-ghost text-cream border-0! px-0! py-0! hover:text-teal!"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost text-cream border-0! px-0! py-0! hover:text-teal!"
+                >
+                  {link.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>

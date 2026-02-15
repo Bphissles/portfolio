@@ -11,6 +11,7 @@ const EducationPage = lazy(() => import('./pages/EducationPage.jsx'))
 const AboutPage = lazy(() => import('./pages/AboutPage.jsx'))
 const RecommendationsPage = lazy(() => import('./pages/RecommendationsPage.jsx'))
 const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage.jsx'))
+const ContactPage = lazy(() => import('./pages/ContactPage.jsx'))
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: 'education', element: <Suspense><EducationPage /></Suspense> },
       { path: 'about', element: <Suspense><AboutPage /></Suspense> },
       { path: 'recommendations', element: <Suspense><RecommendationsPage /></Suspense> },
+      { path: 'contact', element: <Suspense><ContactPage /></Suspense> },
     ],
   },
 ])
