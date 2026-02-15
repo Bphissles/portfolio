@@ -1,7 +1,7 @@
 function Footer() {
   const links = [
-    { label: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' },
-    { label: 'GitHub', href: 'https://github.com', icon: 'github' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/benjaminhislop/', icon: 'linkedin' },
+    { label: 'GitHub', href: 'https://github.com/Bphissles', icon: 'github' },
     { label: 'Resume', href: '/resume.pdf', icon: 'resume' },
   ]
 

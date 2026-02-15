@@ -40,13 +40,15 @@ function HomePage() {
       <section className="py-8 md:py-16 border-t border-black/10">
         <h2 className="text-2xl md:text-3xl font-bold italic text-black mb-4">Recent Highlights</h2>
         <div className="flex flex-col gap-4">
-          <div className="bg-black/5 p-4 md:p-6 rounded-lg">
+          <div className="bg-black/5 p-4 md:p-6 rounded-lg flex flex-col gap-3">
             <p className="text-coral font-bold text-base md:text-lg">B.S. Computer Science — Cum Laude</p>
-            <p className="text-black/70 mt-2">Graduated cum laude from Metropolitan State University of Denver with a Bachelor of Science in Computer Science (December 2025).</p>
+            <p className="text-black/70">Graduated cum laude from Metropolitan State University of Denver with a Bachelor of Science in Computer Science (December 2025).</p>
+            <Link to="/education" className="btn btn-teal text-sm self-start">View Education</Link>
           </div>
-          <div className="bg-black/5 p-4 md:p-6 rounded-lg">
+          <div className="bg-black/5 p-4 md:p-6 rounded-lg flex flex-col gap-3">
             <p className="text-coral font-bold text-base md:text-lg">2024 Employee Outstanding Achievement Award</p>
-            <p className="text-black/70 mt-2">Recognized for excellence in technical leadership and innovation at The JRT Agency, where I lead a 4-person AI Innovation Team modernizing agency workflows.</p>
+            <p className="text-black/70">Recognized for excellence in technical leadership and innovation at The JRT Agency, where I lead a 4-person AI Innovation Team modernizing agency workflows.</p>
+            <Link to="/work" className="btn btn-teal text-sm self-start">View Work History</Link>
           </div>
         </div>
       </section>
