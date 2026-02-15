@@ -22,7 +22,6 @@ function HomePage() {
           <Link to="/projects" className="btn btn-teal">View Projects</Link>
           <Link to="/about" className="btn btn-coral">About Me</Link>
           <Link to="/contact" className="btn btn-outline">Contact</Link>
-          <Link to="/recommendations" className="btn btn-outline">Recommendations</Link>
         </div>
       </section>
 

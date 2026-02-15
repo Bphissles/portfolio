@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import BorderCard from './BorderCard'
+import CtaBanner from './CtaBanner'
 import projects from '../data/projects'
 
 function ProjectDetail() {
@@ -53,6 +54,13 @@ function ProjectDetail() {
           ))}
         </div>
       </div>
+      <CtaBanner
+        heading="Interested in this project?"
+        description="Let's discuss how I can bring this kind of work to your team."
+        buttonText="Get In Touch"
+        buttonTo="/contact"
+        color="coral"
+      />
     </section>
   )
 }

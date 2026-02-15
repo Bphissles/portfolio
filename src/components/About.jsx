@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import BorderCard from './BorderCard'
 
 function About() {
@@ -29,11 +30,13 @@ function About() {
 
           <BorderCard color="teal">
             <h4 className="text-xl md:text-2xl font-bold text-black italic mb-2 md:mb-3">Get In Touch</h4>
-            <p className="text-black/80 leading-relaxed">
-              Evergreen, CO 80439<br />
-              <a href="mailto:bphislop@gmail.com" className="text-coral hover:text-teal transition-colors">bphislop@gmail.com</a><br />
-              <a href="tel:3039680309" className="text-coral hover:text-teal transition-colors">(303) 968-0309</a>
+            <p className="text-black/80 leading-relaxed mb-4">
+              Based in Evergreen, CO. I'm always open to discussing new opportunities, collaborations, or just connecting.
             </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link to="/contact" className="btn btn-coral self-start">Contact Me</Link>
+              <a href="mailto:bphislop@gmail.com" className="btn btn-outline self-start">bphislop@gmail.com</a>
+            </div>
           </BorderCard>
         </div>
       </div>

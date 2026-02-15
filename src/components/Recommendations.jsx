@@ -1,4 +1,5 @@
 import BorderCard from './BorderCard'
+import CtaBanner from './CtaBanner'
 
 function Recommendations() {
   const letters = [
@@ -46,6 +47,13 @@ function Recommendations() {
           </BorderCard>
         ))}
       </div>
+      <CtaBanner
+        heading="Ready to work together?"
+        description="I'd love to hear about your next project."
+        buttonText="Get In Touch"
+        buttonTo="/contact"
+        color="coral"
+      />
     </section>
   )
 }

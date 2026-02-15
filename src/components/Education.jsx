@@ -1,4 +1,5 @@
 import BorderCard from './BorderCard'
+import CtaBanner from './CtaBanner'
 
 function Education() {
   const schools = [
@@ -73,6 +74,13 @@ function Education() {
           </div>
         </div>
       </div>
+      <CtaBanner
+        heading="See it in action"
+        description="Check out the projects where I apply these skills."
+        buttonText="View Projects"
+        buttonTo="/projects"
+        color="teal"
+      />
     </section>
   )
 }

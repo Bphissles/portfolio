@@ -1,4 +1,5 @@
 import BorderCard from './BorderCard'
+import CtaBanner from './CtaBanner'
 
 function Work() {
   const jobs = [
@@ -62,6 +63,13 @@ function Work() {
           </BorderCard>
         ))}
       </div>
+      <CtaBanner
+        heading="Like what you see?"
+        description="I'm open to new opportunities — let's talk."
+        buttonText="Get In Touch"
+        buttonTo="/contact"
+        color="coral"
+      />
     </section>
   )
 }
