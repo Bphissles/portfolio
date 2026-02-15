@@ -1,0 +1,25 @@
+:root {
+  /* Submarines Honey Suckle Remixes-inspired palette */
+  --color-cream: #F5E6C4;
+  --color-teal: #5CBDB6;
+  --color-coral: #E85D3E;
+  --color-black: #1A1A1A;
+}
+
+/* Background colors */
+.bg-cream { background-color: var(--color-cream); }
+.bg-teal { background-color: var(--color-teal); }
+.bg-coral { background-color: var(--color-coral); }
+.bg-black { background-color: var(--color-black); }
+
+/* Text colors */
+.text-cream { color: var(--color-cream); }
+.text-teal { color: var(--color-teal); }
+.text-coral { color: var(--color-coral); }
+.text-black { color: var(--color-black); }
+
+/* Border colors */
+.border-cream { border-color: var(--color-cream); }
+.border-teal { border-color: var(--color-teal); }
+.border-coral { border-color: var(--color-coral); }
+.border-black { border-color: var(--color-black); }

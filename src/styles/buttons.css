@@ -1,0 +1,52 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid var(--color-black);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-teal,
+.btn-coral,
+.btn-outline {
+  box-shadow: 4px 4px 0px var(--color-black);
+}
+
+.btn-teal:hover,
+.btn-coral:hover,
+.btn-outline:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--color-black);
+}
+
+.btn-teal {
+  background-color: var(--color-teal);
+  color: var(--color-black);
+}
+
+.btn-coral {
+  background-color: var(--color-coral);
+  color: var(--color-cream);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-ghost:hover {
+  color: var(--color-coral);
+}
