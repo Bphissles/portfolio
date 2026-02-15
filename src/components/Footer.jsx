@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 
+const links = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/benjaminhislop/' },
+  { label: 'GitHub', href: 'https://github.com/Bphissles' },
+  { label: 'Contact', href: '/contact', internal: true },
+  { label: 'Resume', href: '/resume.pdf' },
+]
+
 function Footer() {
-  const links = [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/benjaminhislop/', icon: 'linkedin' },
-    { label: 'GitHub', href: 'https://github.com/Bphissles', icon: 'github' },
-    { label: 'Contact', href: '/contact', icon: 'contact', internal: true },
-    { label: 'Resume', href: '/resume.pdf', icon: 'resume' },
-  ]
 
   return (
     <footer className="bg-black py-6 px-6 md:py-8 md:px-8 mt-auto">

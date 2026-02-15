@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function ContactForm({ compact = false }) {
+function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
@@ -17,7 +17,7 @@ function ContactForm({ compact = false }) {
 
   if (submitted) {
     return (
-      <div className={`bg-black/5 rounded-lg ${compact ? 'p-4' : 'p-6 md:p-8'} flex items-center justify-center`}>
+      <div className="bg-black/5 rounded-lg p-6 md:p-8 flex items-center justify-center">
         <div className="text-center">
           <p className="text-xl md:text-2xl font-bold text-black italic">Thanks!</p>
           <p className="text-black/70 mt-2">I'll get back to you soon.</p>
@@ -33,7 +33,7 @@ function ContactForm({ compact = false }) {
       data-netlify="true"
       netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
-      className={`bg-black/5 rounded-lg ${compact ? 'p-4' : 'p-6 md:p-8'} flex flex-col gap-4`}
+      className="bg-black/5 rounded-lg p-6 md:p-8 flex flex-col gap-4"
     >
       <input type="hidden" name="form-name" value="contact" />
       <p className="hidden">
@@ -67,7 +67,7 @@ function ContactForm({ compact = false }) {
         <textarea
           id="message"
           name="message"
-          rows={compact ? 3 : 4}
+          rows={4}
           required
           className="border-2 border-black bg-cream px-3 py-2 text-black font-medium focus:outline-none focus:border-teal transition-colors resize-none"
         />

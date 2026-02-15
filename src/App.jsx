@@ -1,8 +1,11 @@
 import { Outlet } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
+import useScrollToTop from './hooks/useScrollToTop'
 
 function App() {
+  useScrollToTop()
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />

@@ -36,7 +36,7 @@ body {
   font-style: italic;
   line-height: 1;
   color: transparent;
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
 }
 

@@ -5,8 +5,7 @@ function About() {
   return (
     <section id="about" className="container">
       <h3 className="mega-heading-3">About</h3>
-      <div className="mt-6 md:mt-8">
-        <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 mt-6 md:mt-8">
           <div>
             <h4 className="text-xl md:text-2xl font-bold text-black italic mb-2 md:mb-3">Who I Am</h4>
             <p className="text-black/80 leading-relaxed">
@@ -38,7 +37,6 @@ function About() {
               <a href="mailto:bphislop@gmail.com" className="btn btn-outline self-start">bphislop@gmail.com</a>
             </div>
           </BorderCard>
-        </div>
       </div>
     </section>
   )

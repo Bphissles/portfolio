@@ -1,14 +1,20 @@
 import { Link } from 'react-router-dom'
 import BorderCard from '../components/BorderCard'
+import useDocumentMeta from '../hooks/useDocumentMeta'
+
+const skills = [
+  { category: 'Frontend', items: 'Vue.js, Nuxt.js, Angular, React, TypeScript, jQuery' },
+  { category: 'Backend & Architecture', items: 'Java, Spring Boot, REST APIs, GraphQL, WebSockets' },
+  { category: 'CMS & Templating', items: 'CrafterCMS, dotCMS, Sanity.io, MJDX, Velocity, FreeMarker' },
+  { category: 'AI & Data Science', items: 'Python, Pandas, NumPy, Scikit-learn, SQL, NoSQL, Tableau' },
+  { category: 'Design & Strategy', items: 'UI/UX Design, Responsive Design, Accessibility (WCAG), Agile Methodology' },
+]
 
 function HomePage() {
-  const skills = [
-    { category: 'Frontend', items: 'Vue.js, Nuxt.js, Angular, React, TypeScript, jQuery' },
-    { category: 'Backend & Architecture', items: 'Java, Spring Boot, REST APIs, GraphQL, WebSockets' },
-    { category: 'CMS & Templating', items: 'CrafterCMS, dotCMS, Sanity.io, MJDX, Velocity, FreeMarker' },
-    { category: 'AI & Data Science', items: 'Python, Pandas, NumPy, Scikit-learn, SQL, NoSQL, Tableau' },
-    { category: 'Design & Strategy', items: 'UI/UX Design, Responsive Design, Accessibility (WCAG), Agile Methodology' },
-  ]
+  useDocumentMeta(
+    'Senior Frontend Developer & AI Innovation Lead',
+    'Portfolio of Ben Hislop — Senior Frontend Developer and AI Innovation Lead with 8+ years building high-performance web applications.'
+  )
 
   return (
     <div className="container">

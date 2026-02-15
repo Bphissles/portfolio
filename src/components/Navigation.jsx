@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
+const navItems = [
+  { label: 'Projects', to: '/projects' },
+  { label: 'Work', to: '/work' },
+  { label: 'Education', to: '/education' },
+  { label: 'About', to: '/about' },
+  { label: 'Letters', to: '/recommendations' },
+  { label: 'Contact', to: '/contact' },
+]
+
 function Navigation() {
   const location = useLocation()
   const [isOpen, setIsOpen] = useState(false)
-  const navItems = [
-    { label: 'Projects', to: '/projects' },
-    { label: 'Work', to: '/work' },
-    { label: 'Education', to: '/education' },
-    { label: 'About', to: '/about' },
-    { label: 'Letters', to: '/recommendations' },
-    { label: 'Contact', to: '/contact' },
-  ]
 
   return (
     <nav className="bg-black py-4 px-6 md:py-6 md:px-8">

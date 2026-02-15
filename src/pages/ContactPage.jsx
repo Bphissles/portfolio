@@ -1,6 +1,11 @@
 import ContactForm from '../components/ContactForm'
+import useDocumentMeta from '../hooks/useDocumentMeta'
 
 function ContactPage() {
+  useDocumentMeta(
+    'Contact',
+    'Get in touch with Ben Hislop — open to new opportunities, collaborations, and connections.'
+  )
   return (
     <section className="container">
       <h3 className="mega-heading-3">Contact</h3>
