@@ -21,7 +21,7 @@ function ContactPage() {
             <h4 className="text-xl font-bold text-black italic mb-4">Other Ways to Reach Me</h4>
             <div className="flex flex-col gap-3">
               <a href="mailto:bphislop@gmail.com" className="text-coral hover:text-teal transition-colors font-semibold">bphislop@gmail.com</a>
-              <a href="tel:3039680309" className="text-coral hover:text-teal transition-colors font-semibold">(303) 968-0309</a>
+              <a href="tel:3039686369" className="text-coral hover:text-teal transition-colors font-semibold">(303) 968-6369</a>
               <p className="text-black/60 text-sm">Evergreen, CO 80439</p>
             </div>
           </div>

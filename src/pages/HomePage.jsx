@@ -4,10 +4,10 @@ import useDocumentMeta from '../hooks/useDocumentMeta'
 
 const skills = [
   { category: 'Frontend', items: 'Vue.js, Nuxt.js, Angular, React, TypeScript, jQuery' },
-  { category: 'Backend & Architecture', items: 'Java, Spring Boot, REST APIs, GraphQL, WebSockets' },
-  { category: 'CMS & Templating', items: 'CrafterCMS, dotCMS, Sanity.io, MJDX, Velocity, FreeMarker' },
+  { category: 'Backend & Architecture', items: 'Java, Spring Boot, Grails, REST APIs, GraphQL, WebSockets' },
+  { category: 'CMS & Templating', items: 'CrafterCMS, dotCMS, Sanity.io, MODx, WordPress, Velocity, FreeMarker' },
   { category: 'AI & Data Science', items: 'Python, Pandas, NumPy, Scikit-learn, SQL, NoSQL, Tableau' },
-  { category: 'Design & Strategy', items: 'UI/UX Design, Responsive Design, Accessibility (WCAG), Agile Methodology' },
+  { category: 'Design & Strategy', items: 'UI/UX Design, Figma, Responsive Design, Accessibility (WCAG), Agile Methodology' },
 ]
 
 function HomePage() {
