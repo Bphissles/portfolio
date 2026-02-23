@@ -27,7 +27,10 @@ function ProjectDetail() {
 
       <div className="flex flex-col sm:flex-row gap-3 mt-6 md:mt-8">
         {project.liveUrl && (
-          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-coral">Live Site</a>
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-coral">{project.euUrl ? 'US Site' : 'Live Site'}</a>
+        )}
+        {project.euUrl && (
+          <a href={project.euUrl} target="_blank" rel="noopener noreferrer" className="btn btn-coral">EU Site</a>
         )}
         {project.discordUrl && (
           <a href={project.discordUrl} target="_blank" rel="noopener noreferrer" className="btn btn-coral">Discord</a>

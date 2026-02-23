@@ -25,7 +25,10 @@ function Projects() {
             <div className="flex flex-col sm:flex-row gap-3 mt-auto pt-2">
               <Link to={`/projects/${project.slug}`} className="btn btn-teal text-sm">Read More</Link>
               {project.liveUrl && (
-                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-coral text-sm">Live Site</a>
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-coral text-sm">{project.euUrl ? 'US Site' : 'Live Site'}</a>
+              )}
+              {project.euUrl && (
+                <a href={project.euUrl} target="_blank" rel="noopener noreferrer" className="btn btn-coral text-sm">EU Site</a>
               )}
               {project.discordUrl && (
                 <a href={project.discordUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline text-sm">Discord</a>

@@ -1,5 +1,37 @@
 const projects = [
   {
+    slug: 'dodge-garage',
+    title: 'Dodge Garage',
+    tagline: 'Enterprise content platform for the Dodge enthusiast community.',
+    description: 'The official digital hub for Dodge enthusiasts — a high-traffic content platform delivering news, racing coverage, events, vehicle experiences, and media across both U.S. and European markets. Built with Vue and Nuxt, powered by CrafterCMS, and scaled through a shared component library managed with Verdaccio.',
+    tech: ['Vue.js', 'Nuxt.js', 'CrafterCMS', 'Verdaccio', 'JavaScript', 'SCSS', 'Java', 'Spring Boot', 'REST APIs', 'AWS'],
+    liveUrl: 'https://www.dodgegarage.com',
+    euUrl: 'https://www.dodgegarage.eu',
+    color: 'coral',
+    sections: [
+      {
+        heading: 'Overview',
+        content: 'DodgeGarage is the official online destination for Dodge performance enthusiasts. The platform serves a rich content experience including daily news articles, NHRA racing coverage, event calendars, vehicle history timelines, interactive Drag Pak experiences, featured video series, social media integrations, and user account management. I have been the primary frontend developer maintaining and evolving this platform for over 7 years.',
+      },
+      {
+        heading: 'Frontend Architecture',
+        content: 'The frontend is built on Vue.js and Nuxt.js, delivering a server-rendered, SEO-optimized experience across hundreds of content-driven pages. The architecture supports dynamic routing for articles, events, vehicle pages, and multimedia content. Responsive design ensures a seamless experience from mobile to desktop, with performance optimizations for image-heavy editorial layouts and embedded video players.',
+      },
+      {
+        heading: 'Content Management',
+        content: 'All editorial content is managed through CrafterCMS, a headless CMS that empowers the content team to publish daily articles, manage event listings, and curate featured content independently. The frontend consumes CrafterCMS APIs to render structured content with full authoring flexibility — enabling rapid publishing workflows without developer intervention.',
+      },
+      {
+        heading: 'Shared Component Library',
+        content: 'A private npm registry powered by Verdaccio hosts a shared component library used across both DodgeGarage.com and DodgeGarage.eu. This architecture enables consistent UI patterns, shared business logic, and synchronized feature rollouts between the U.S. and European platforms while allowing region-specific customizations such as localized legal content, privacy controls, and social integrations.',
+      },
+      {
+        heading: 'European Expansion',
+        content: 'DodgeGarage.eu extends the platform to the European market, sharing the same core content pipeline and component library as the .com site. The EU variant includes region-specific adaptations including GDPR-compliant cookie management, localized privacy policies, European social channels (Dodge Europe on Facebook and Instagram), and content tailored for the EU Dodge audience.',
+      },
+    ],
+  },
+  {
     slug: 'student-dropout-risk-predictor',
     title: 'Student Dropout Risk Predictor',
     tagline: 'Machine learning model that identifies at-risk students before they drop out.',
