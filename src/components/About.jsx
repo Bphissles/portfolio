@@ -9,14 +9,14 @@ function About() {
           <div>
             <h4 className="text-xl md:text-2xl font-bold text-black italic mb-2 md:mb-3">Who I Am</h4>
             <p className="text-black/80 leading-relaxed">
-              I'm a Senior Frontend Developer and AI Innovation Lead based in Evergreen, Colorado. With over 8 years in the industry, I've built high-performance web applications across the automotive, manufacturing, and energy sectors — always with a focus on clean architecture, accessibility, and pushing what's possible with modern tooling.
+              I'm a Solutions Architect and hands-on engineer based in Evergreen, Colorado. With 8 years of experience building web platforms for automotive and manufacturing clients including Mopar, Dana, and Peterbilt, I design cloud and CMS architectures, lead technical delivery across 3–4 concurrent projects, and run AI adoption at The JRT Agency. I'm also co-founder of StageFinder, a live-music ticketing platform I architected and built end to end.
             </p>
           </div>
 
           <div>
             <h4 className="text-xl md:text-2xl font-bold text-black italic mb-2 md:mb-3">What Drives Me</h4>
             <p className="text-black/80 leading-relaxed">
-              I'm passionate about bridging the gap between design and engineering. Whether it's leading an AI innovation team, mentoring junior developers, or diving deep into a headless CMS migration, I bring curiosity and ownership to everything I do. I recently graduated cum laude from Metropolitan State University of Denver with a B.S. in Computer Science — because I believe in never stopping learning.
+              I'm passionate about bridging the gap between design and engineering. Whether it's training a company on Claude, mentoring junior developers, or diving deep into a CMS migration, I bring curiosity and ownership to everything I do. I recently graduated cum laude from Metropolitan State University of Denver with a B.S. in Computer Science — because I believe in never stopping learning.
             </p>
           </div>
 

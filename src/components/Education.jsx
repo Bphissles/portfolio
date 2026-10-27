@@ -12,25 +12,15 @@ const schools = [
       "Provost's Honor Roll",
       'Upsilon Pi Epsilon Member',
       'National Society of Leadership and Success Member',
-      'MSU Star Science Club Vice President',
+      'Stat Science Club Vice President',
     ],
   },
   {
     name: 'Red Rocks Community College',
     location: 'Lakewood, CO',
-    degree: 'Associates of Science',
-    date: '06/2013',
+    degree: 'Associate of Science, Mathematics',
+    date: '2015',
     highlights: [],
-  },
-]
-
-const certifications = [
-  {
-    name: 'AWS Certified Solutions Architect – Associate',
-    issuer: 'Amazon Web Services',
-    code: 'SAA-C03',
-    status: 'In Progress',
-    expected: '05/2026',
   },
 ]
 
@@ -38,8 +28,8 @@ function Education() {
   return (
     <section id="education" className="container">
       <h3 className="mega-heading-3">Education</h3>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mt-6 md:mt-8">
-        <div className="lg:col-span-2">
+      <div className="mt-6 md:mt-8">
+        <div>
           <h4 className="text-xl md:text-2xl font-bold text-black italic mb-6">Degrees</h4>
           <div className="flex flex-col gap-8 md:gap-12">
           {schools.map((school) => (
@@ -56,21 +46,6 @@ function Education() {
               )}
             </BorderCard>
           ))}
-          </div>
-        </div>
-        <div>
-          <h4 className="text-xl md:text-2xl font-bold text-black italic mb-6">Certifications</h4>
-          <div className="flex flex-col gap-6">
-            {certifications.map((cert) => (
-              <BorderCard key={cert.name} color="teal">
-                <h5 className="text-base md:text-lg font-bold text-black">{cert.name}</h5>
-                <p className="text-sm text-coral font-semibold">{cert.issuer}</p>
-                <p className="text-sm text-black/60">{cert.code}</p>
-                <span className="inline-block mt-2 text-xs font-semibold uppercase tracking-wide bg-teal/20 text-black px-2 py-1">
-                  {cert.status} &middot; Expected {cert.expected}
-                </span>
-              </BorderCard>
-            ))}
           </div>
         </div>
       </div>

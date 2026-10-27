@@ -1,5 +1,32 @@
 const projects = [
   {
+    slug: 'stagefinder',
+    title: 'The StageFinder',
+    tagline: 'Live-music discovery and ticketing platform I co-founded.',
+    description: 'A live-music discovery and ticketing platform built with one partner. I own product, engineering, and DevOps. Go REST API, Postgres, and a Next.js front end, with ticketing on Stripe Connect. The public beta is live.',
+    tech: ['Go', 'Postgres', 'Supabase', 'sqlc', 'Next.js', 'React', 'TypeScript', 'Stripe Connect', 'AWS S3'],
+    liveUrl: 'https://www.stagefinder.fm/discover',
+    color: 'teal',
+    sections: [
+      {
+        heading: 'Overview',
+        content: 'The StageFinder is a live-music discovery and ticketing platform that I co-founded in March 2026 with one partner. I own product, engineering, and DevOps, and the public beta is live at stagefinder.fm.',
+      },
+      {
+        heading: 'Architecture',
+        content: 'The stack is a Go REST API, Postgres (Supabase, sqlc), and a Next.js / React / TypeScript front end, with S3 media storage and an AWS hosting migration in progress. I replaced a third-party headless CMS with first-party data models to cut vendor dependency.',
+      },
+      {
+        heading: 'Ticketing',
+        content: 'Ticketing is built on Stripe Connect with itemized pass-through fees, so the platform never absorbs processing costs. It also includes checkout capacity limits, owner payouts, and QR-code check-in.',
+      },
+      {
+        heading: 'Admin Tools',
+        content: 'Role-based admin tools and a booking-consent workflow let promoters request claimed artists and venues.',
+      },
+    ],
+  },
+  {
     slug: 'dodge-garage',
     title: 'Dodge Garage',
     tagline: 'Enterprise content platform for the Dodge enthusiast community.',

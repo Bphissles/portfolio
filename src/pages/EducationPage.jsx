@@ -3,8 +3,8 @@ import useDocumentMeta from '../hooks/useDocumentMeta'
 
 function EducationPage() {
   useDocumentMeta(
-    'Education & Certifications',
-    'Academic background and certifications of Ben Hislop — B.S. Computer Science (Cum Laude) and AWS Solutions Architect certification.'
+    'Education',
+    'Academic background of Ben Hislop — B.S. Computer Science (Cum Laude) and A.S. Mathematics.'
   )
 
   return <Education />
