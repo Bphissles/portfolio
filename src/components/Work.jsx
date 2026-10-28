@@ -19,6 +19,7 @@ const jobs = [
     company: 'The JRT Agency',
     location: 'Farmington, MI (Remote)',
     dates: '08/2026 – Present',
+    labeled: true,
     bullets: [
       'Technical project management: Run 3–4 concurrent client projects with a team of 7 developers in Jira, designing sprint cadences for some projects and managing kanban boards for others.',
       'Client consulting: Work directly with clients on nearly every project, joining kickoffs as both PM and technical lead, running requirements sessions with client stakeholders and their engineers (including platform and integration requirements for a Shopify build), and presenting plans and recommendations.',
@@ -82,7 +83,14 @@ function Work() {
             <p className="text-sm text-black/60 mb-4">{job.dates}</p>
             <ul className="list-disc list-outside ml-4 flex flex-col gap-2">
               {job.bullets.map((bullet, i) => (
-                <li key={i} className="text-black/80">{bullet}</li>
+                <li key={i} className="text-black/80">
+                  {job.labeled ? (
+                    <>
+                      <span className="font-bold text-black">{bullet.slice(0, bullet.indexOf(':') + 1)}</span>
+                      {bullet.slice(bullet.indexOf(':') + 1)}
+                    </>
+                  ) : bullet}
+                </li>
               ))}
             </ul>
           </BorderCard>

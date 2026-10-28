@@ -13,6 +13,13 @@ const skills = [
   { category: 'Also', items: 'Python (Pandas, scikit-learn, Streamlit), Tableau, SQL / NoSQL' },
 ]
 
+const proof = [
+  { value: '$63K+/yr', label: 'saved for clients through CMS and video platform migrations' },
+  { value: '3–4', label: 'concurrent projects led with a team of 7 developers' },
+  { value: '50+', label: 'colleagues per company-wide Claude training' },
+  { value: 'End to end', label: 'StageFinder ticketing platform, built and live in beta' },
+]
+
 function HomePage() {
   useDocumentMeta(
     'Solutions Architect, AI Innovation & Delivery',
@@ -31,6 +38,15 @@ function HomePage() {
           <Link to="/projects" className="btn btn-teal">View Projects</Link>
           <Link to="/about" className="btn btn-coral">About Me</Link>
           <Link to="/contact" className="btn btn-outline">Contact</Link>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Resume</a>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-8 md:mt-12">
+          {proof.map((item) => (
+            <div key={item.value} className="bg-black/5 rounded-lg p-4 md:p-5">
+              <p className="text-2xl md:text-3xl font-bold italic text-coral">{item.value}</p>
+              <p className="text-sm text-black/70 mt-1 leading-snug">{item.label}</p>
+            </div>
+          ))}
         </div>
       </section>
 

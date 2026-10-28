@@ -23,7 +23,7 @@ function About() {
           <div>
             <h4 className="text-xl md:text-2xl font-bold text-black italic mb-2 md:mb-3">What I'm Looking For</h4>
             <p className="text-black/80 leading-relaxed">
-              I'm seeking a role where I can continue to grow as a technical leader — ideally on a collaborative team that values innovation, quality, and a good sense of humor. I thrive in environments where I can mentor others, architect solutions, and make a real impact on the product.
+              I'm looking for an AI-focused role, such as AI solutions architecture, AI enablement, or applied AI engineering, where I can turn what AI can do into working systems and into how teams actually work. I've done that by training 50+ colleagues on Claude, building Claude skills and CMS plugins, and automating audits, and I'd like to do more of it. I'm open to agency or product teams that value clear documentation, quality, and a good sense of humor.
             </p>
           </div>
 
